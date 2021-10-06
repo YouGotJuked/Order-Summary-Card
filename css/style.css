@@ -12,7 +12,8 @@ body{
     font-family: "Red Hat Display";
     font-size: 1rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     background-color: rgb(231, 231, 231);
 }
@@ -69,6 +70,8 @@ body{
 
 .plan a{
     color: hsl(245, 75%, 52%);
+
+    transition: all .3s ease;
 }
 
 .plan-left-container img{
@@ -105,6 +108,8 @@ body{
     text-decoration: none;
     margin-bottom: 1.5rem;
     box-shadow: 2px 20px 10px hsl(225, 100%, 94%);
+
+    transition: all .3s ease;
 }
 
 .cancel-order-btn{
@@ -113,6 +118,27 @@ body{
     color : hsl(224, 23%, 55%);
     font-weight: 600;
     text-align: center;
+
+    transition: all .2s ease;
+}
+
+.attribution{
+    display: flex;
+    justify-content: center;
+}
+
+/* Hover Effects/ Active Effects */
+
+.change:hover, .change:active{
+    color:hsl(224, 23%, 55%);
+}
+
+.payment-btn:hover, .payment-btn:active{
+    background-color: hsl(224, 23%, 55%);
+}
+
+.cancel-order-btn:hover, .cancel-order-btn:active{
+    color: hsl(223, 47%, 23%);
 }
 
 
@@ -123,5 +149,15 @@ body{
 
     .order-sum-desc p, .plan, .payment-btn{
         width: 80%;
+    }
+
+    .attribution{
+        width: 90vw;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .attribution span{
+        margin-bottom: .5rem;
     }
 }
