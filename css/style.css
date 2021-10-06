@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: "Red Hat Display";
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(231, 231, 231);
+}
+
+.card{
+    width: 25rem;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero{
+    width: 100%;
+}
+
+.card .hero img{
+    width: 100%;
+}
+
+.order-sum-desc{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 1.5rem 0;
+}
+
+.order-sum-desc h2{
+    margin-bottom: 1rem;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.order-sum-desc p{
+    width: 75%;
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+}
+
+.plan{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.plan a{
+    color: hsl(245, 75%, 52%);
+}
+
+.plan-left-container img{
+    margin-right: .8rem;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.plan-left-container{
+    display: flex;
+    align-items: center;
+}
+
+.plan-desc span{
+    display: block;
+    color: hsl(224, 23%, 55%);
+}
+
+.plan-desc span:first-child{
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+}
+
+.payment-btn{
+    width: 75%;
+    text-align: center;
+    padding: .7rem 1rem;
+}
+
+.payment-btn{
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 8px;
+    color: hsl(225, 100%, 98%);
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    box-shadow: 2px 20px 10px hsl(225, 100%, 94%);
+}
+
+.cancel-order-btn{
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color : hsl(224, 23%, 55%);
+    font-weight: 600;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 376px){
+    .card{
+        width: 90vw;
+    }
+
+    .order-sum-desc p, .plan, .payment-btn{
+        width: 80%;
+    }
+}
